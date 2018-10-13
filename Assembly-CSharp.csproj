@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9D9D4067-E78D-3CE2-2710-6B0BD7415D69}</ProjectGuid>
+    <ProjectGuid>{6363FAB5-2A4D-BBAD-2EA5-D61A61E98F37}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,16 +56,16 @@
      <Compile Include="Assets\PlayerMotion.cs" />
      <Compile Include="Assets\PlayerMove.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/RYUHEI/Documents/UnityProject/BUNKASAI/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/RYUHEI/Documents/GitHub/Bunkasai/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/RYUHEI/Documents/UnityProject/BUNKASAI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/RYUHEI/Documents/GitHub/Bunkasai/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/RYUHEI/Documents/UnityProject/BUNKASAI/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/RYUHEI/Documents/GitHub/Bunkasai/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/RYUHEI/Documents/UnityProject/BUNKASAI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/RYUHEI/Documents/GitHub/Bunkasai/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
