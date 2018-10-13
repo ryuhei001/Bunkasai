@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2018-10-13T18:33:09.805+09:00
+  initializedAtString: 2018-10-13T18:12:27.266+09:00
+  log:
+  - commitID: 0a0932fff21679b9a9df82a8dbefc6dbba19f006
+    mergeA: 
+    mergeB: 
+    authorName: ryuhei001
+    authorEmail: 31504472+ryuhei001@users.noreply.github.com
+    commitEmail: 31504472+ryuhei001@users.noreply.github.com
+    commitName: ryuhei001
+    summary: FirstCommit
+    description: FirstCommit
+    timeString: 2018-10-13T18:14:56.000+09:00
+    commitTimeString: 2018-10-13T18:14:56.000+09:00
+    changes:
+    - path: Assets\PlayerMotion.controller
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\PlayerMotion.controller
+      projectPath: Assets\PlayerMotion.controller
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\PlayerMotion.controller.meta
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\PlayerMotion.controller.meta
+      projectPath: Assets\PlayerMotion.controller.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\PlayerMotion.cs
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\PlayerMotion.cs
+      projectPath: Assets\PlayerMotion.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\PlayerMotion.cs.meta
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\PlayerMotion.cs.meta
+      projectPath: Assets\PlayerMotion.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\PlayerMove.cs
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\PlayerMove.cs
+      projectPath: Assets\PlayerMove.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\PlayerMove.cs.meta
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\PlayerMove.cs.meta
+      projectPath: Assets\PlayerMove.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins.meta
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\Plugins.meta
+      projectPath: Assets\Plugins.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes.meta
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\Scenes.meta
+      projectPath: Assets\Scenes.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\SampleScene.unity.meta
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\Scenes\SampleScene.unity.meta
+      projectPath: Assets\Scenes\SampleScene.unity.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\bunkasai_player.fbx
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\bunkasai_player.fbx
+      projectPath: Assets\bunkasai_player.fbx
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\bunkasai_player.fbx.meta
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\bunkasai_player.fbx.meta
+      projectPath: Assets\bunkasai_player.fbx.meta
+      originalPath: 
+      status: 4
+      staged: 0
+  - commitID: bbf37df11926befe855a4d1fe3ea01c1a4feda98
+    mergeA: 
+    mergeB: 
+    authorName: ryuhei001
+    authorEmail: 31504472+ryuhei001@users.noreply.github.com
+    commitEmail: 31504472+ryuhei001@users.noreply.github.com
+    commitName: ryuhei001
+    summary: Initial commit
+    description: Initial commit
+    timeString: 2018-10-13T18:12:26.000+09:00
+    commitTimeString: 2018-10-13T18:12:26.000+09:00
+    changes:
+    - path: .gitattributes
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: .gitignore
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\.gitignore
+      fullPath: C:\Users\RYUHEI\Documents\UnityProject\BUNKASAI\Assets\.gitignore
+      projectPath: Assets\.gitignore
+      originalPath: 
+      status: 4
+      staged: 0
