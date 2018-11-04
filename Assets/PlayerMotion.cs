@@ -13,12 +13,13 @@ public class PlayerMotion : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetAxis ("Vertical") > 0) {
-			ani.SetInteger ("Vertical", 1);
-
-		} else {
-			ani.SetInteger ("Vertical",0);
-		}
+        if (Input.GetAxis("Vertical") > 0) {
+            ani.SetInteger("Vertical", 1);
+        } else if (Input.GetAxis("Vertical") < 0) {
+            ani.SetInteger("Vertical", -1);
+        } else {
+            ani.SetInteger("Vertical", 0);
+        }
 		ani.SetBool ("Jump", Input.GetButton ("Jump"));
         //射撃処理
         if (Input.GetMouseButtonUp(0))
