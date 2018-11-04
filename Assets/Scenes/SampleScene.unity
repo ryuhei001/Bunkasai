@@ -365,7 +365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a26c7b74003b064cbbfc84b2e7f48b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
 --- !u!114 &283965206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a26c7b74003b064cbbfc84b2e7f48b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
 --- !u!143 &301215449
 CharacterController:
   m_ObjectHideFlags: 0
@@ -873,6 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ea82837bd2fc342b80302ddc340665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
   speed: 40
   jumpSpeed: 10
   gra: 10
@@ -896,7 +895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586873906b294d14198b036e6e7a389c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
 --- !u!1 &805240971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,7 +1370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a26c7b74003b064cbbfc84b2e7f48b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
 --- !u!114 &1594980253
 MonoBehaviour:
   m_ObjectHideFlags: 0

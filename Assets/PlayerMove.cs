@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
-	public float speed = 15f;
+    public GameObject bomb;
+    public float speed = 15f;
 	public float jumpSpeed = 8f;
 	public float gra = 20f;
 	private Vector3 moveDir = Vector3.zero;
@@ -38,10 +39,7 @@ public class PlayerMove : MonoBehaviour {
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= speed;
 			transform.Rotate (0, Input.GetAxis ("Horizontal") * rotSpeed, 0);
-            //float rotateX = (transform.eulerAngles.x > 180) ? transform.eulerAngles.x - 360 : transform.eulerAngles.x;
-            //float angleX = Mathf.Clamp(rotateX + Input.GetAxis("Vertical") * rotSpeed * -1, minAngle, maxAngle);
-            //angleX = (angleX < 0) ? angleX + 360 : angleX;
-            //float eulerAngleX = Mathf.Clamp(mainCam.eulerAngles.x + Input.GetAxis("Vertical"), minAngle, maxAngle);
+            
             Vector3 angles = mainCam.eulerAngles;
             Debug.Log(mainCam.eulerAngles.x);
             if(angles.x > 180 && angles.x < 340 && Input.GetAxis("Vertical") > 0)
@@ -56,9 +54,14 @@ public class PlayerMove : MonoBehaviour {
             {
                 mainCam.eulerAngles = new Vector3(angles.x + Input.GetAxis("Vertical") * rotSpeed * -1, angles.y, angles.z);
             }
-            //transform.RotateAround(transform.position, transform.right, Input.GetAxis("Horizontal") * rotSpeed);
+            //射撃処理
+            if (Input.GetMouseButtonUp(0))
+            {
+                GameObject newBomb = Instantiate(bomb, new Vector3(transform.position.x, transform.position.y + 4.93f, transform.position.z), transform.rotation);
+                newBomb.GetComponent<BombScript>().SetVelocity(mainCam.forward);
+            }
 
-			if (Input.GetButton ("Jump")) {
+            if (Input.GetButton ("Jump")) {
 				
 				moveDir.y = jumpSpeed;
 			} else {
