@@ -22,4 +22,10 @@ public class BombScript : MonoBehaviour {
         var rid = GetComponent<Rigidbody>();
         rid.velocity = forward * speed;
     }
+	private void OnCollisionEnter(Collision collider){
+		if (collider.gameObject.tag == "Stage") {
+			Destroy (gameObject);
+			Debug.Log ("shotDes");
+		}
+	}
 }

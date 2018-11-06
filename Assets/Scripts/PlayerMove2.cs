@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour {
+public class PlayerMove2 : MonoBehaviour {
 	public float speed = 15f;
 	public float jumpSpeed = 8f;
 	public float gra = 20f;
@@ -24,7 +24,7 @@ public class PlayerMove : MonoBehaviour {
 	void Update () {
 		CharacterController chCon = GetComponent<CharacterController> ();
 
-		Debug.Log ("worldPosition"+transform.TransformDirection(moveDir));
+		//Debug.Log ("worldPosition"+transform.TransformDirection(moveDir));
 		if (!chCon.isGrounded) {
 			if (Physics.Linecast (rayPos.position, (rayPos.position - transform.up * rayRan))) {
 				isGround = true;
@@ -34,10 +34,10 @@ public class PlayerMove : MonoBehaviour {
 		}
 
 		if (chCon.isGrounded||isGround) {
-			moveDir = new Vector3 (0, 0, Input.GetAxis ("Vertical"));
+			moveDir = new Vector3 (0, 0, Input.GetAxis ("Vertical2"));
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= speed;
-			transform.Rotate (0, Input.GetAxis ("Horizontal") * rotSpeed, 0);
+			transform.Rotate (0, Input.GetAxis ("Horizontal2") * rotSpeed, 0);
 
 			if (Input.GetButton ("Jump")) {
 				
@@ -45,9 +45,9 @@ public class PlayerMove : MonoBehaviour {
 			} else {
 				moveDir.y -= gra * Time.deltaTime;
 			}
-			Debug.Log ("true");
+			//Debug.Log ("true");
 		} else {
-			Debug.Log ("false");
+			//Debug.Log ("false");
 		}
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);

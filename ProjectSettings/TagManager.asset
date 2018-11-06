@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Stage
+  - Player1Shot
+  - Player2Shot
+  - Player3Shot
+  - Player4Shot
   layers:
   - Default
   - TransparentFX
@@ -14,14 +19,14 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player1
+  - Player2
+  - Player3
+  - Player4
+  - Player1Shot
+  - Player2Shot
+  - Player3Shot
+  - Player4Shot
   - 
   - 
   - 

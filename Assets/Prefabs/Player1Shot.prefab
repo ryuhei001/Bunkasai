@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 135494220737218600}
   - component: {fileID: 54846398997330984}
   - component: {fileID: 114449097228289176}
-  m_Layer: 0
-  m_Name: Bomb
-  m_TagString: Untagged
+  m_Layer: 13
+  m_Name: Player1Shot
+  m_TagString: Player1Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ SphereCollider:
   m_GameObject: {fileID: 1469346566701304}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

@@ -122,7 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 43438977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: jet.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 44305152}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: leg_joint.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 73395060}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: leg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 78555818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: jet.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13886
+  m_Name: pb_Mesh15842
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -400,7 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 106674808}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 116278169}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: leg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120647323}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jet.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 133778821}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 135933305}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jet.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 139194163}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ GameObject:
   - component: {fileID: 183945329}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -748,7 +748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 207854995}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hand.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -782,7 +782,8 @@ GameObject:
   - component: {fileID: 283965207}
   - component: {fileID: 283965205}
   - component: {fileID: 283965206}
-  m_Layer: 0
+  - component: {fileID: 283965210}
+  m_Layer: 12
   m_Name: bunkasai_player (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a26c7b74003b064cbbfc84b2e7f48b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
+  bomb: {fileID: 1469346566701304, guid: 4fa4f601d74dcda4e8c92f3b2808a901, type: 2}
 --- !u!114 &283965206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,6 +873,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &283965210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283965204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2836ba777896e924cab9976698c5a000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armerPoint: 100
+  damage: 10
 --- !u!1 &301215446
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,7 +899,8 @@ GameObject:
   - component: {fileID: 301215449}
   - component: {fileID: 301215447}
   - component: {fileID: 301215448}
-  m_Layer: 0
+  - component: {fileID: 301215452}
+  m_Layer: 10
   m_Name: bunkasai_player (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,12 +990,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301215452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 301215446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af35d4b3549ee347ae08dfecf17b281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armerPoint: 100
+  damage: 10
 --- !u!43 &314887840
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13872
+  m_Name: pb_Mesh15828
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1201,6 +1229,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -1213,7 +1245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 340095867}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,7 +1278,7 @@ GameObject:
   - component: {fileID: 344375931}
   - component: {fileID: 344375932}
   - component: {fileID: 344375933}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,7 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 368873015}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,7 +1420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 376199659}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jet.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1419,7 +1451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 378794815}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: jet.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1484,7 @@ GameObject:
   - component: {fileID: 400019632}
   m_Layer: 0
   m_Name: stage_bridge_copy (2)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1481,7 +1513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 419994035}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1546,7 @@ GameObject:
   - component: {fileID: 424266336}
   - component: {fileID: 424266337}
   - component: {fileID: 424266338}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1626,7 +1658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429326843}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jet.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1657,7 +1689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 458928639}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: foot.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1715,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13760
+  m_Name: pb_Mesh15722
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1842,7 +1874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475543183}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: leg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497936637}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1934,7 +1966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 521726556}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_joint.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1967,7 +1999,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2102,7 +2134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543136524}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_joint.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2133,7 +2165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 571520879}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2164,7 +2196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 574831044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2195,7 +2227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 592113903}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2226,7 +2258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 594166066}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: foot.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2256,7 +2288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638169969}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jet.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,6 +2381,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -2363,7 +2399,7 @@ GameObject:
   - component: {fileID: 711001491}
   - component: {fileID: 711001492}
   - component: {fileID: 711001493}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2479,9 +2515,10 @@ GameObject:
   - component: {fileID: 751250613}
   - component: {fileID: 751250614}
   - component: {fileID: 751250617}
-  m_Layer: 0
+  - component: {fileID: 751250619}
+  m_Layer: 9
   m_Name: bunkasai_player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2568,13 +2605,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586873906b294d14198b036e6e7a389c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
+  bomb: {fileID: 1469346566701304, guid: 2442303c530cd6a4e91015cc6d9f45d1, type: 2}
+--- !u!114 &751250619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751250612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc844ee9a9e89a458c52a3b1bf44684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armerPoint: 100
+  damage: 10
 --- !u!43 &760283667
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh14146
+  m_Name: pb_Mesh16110
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2733,7 +2783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 799279864}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2769,7 +2819,7 @@ GameObject:
   - component: {fileID: 802984104}
   m_Layer: 0
   m_Name: stage_bridge_copy (3)
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10344,7 +10394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823802106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10371,7 +10421,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13838
+  m_Name: pb_Mesh15800
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10530,7 +10580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 858750070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10561,7 +10611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 866376021}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10591,7 +10641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 881331571}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: foot.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10683,6 +10733,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -10695,7 +10749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 897683675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10726,7 +10780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 914552649}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10757,7 +10811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 948352661}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: jet.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18333,7 +18387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989542413}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: foot.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18363,7 +18417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 994444230}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jet.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18399,7 +18453,7 @@ GameObject:
   - component: {fileID: 1004321221}
   m_Layer: 0
   m_Name: Cube.001
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18486,7 +18540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031642666}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jet.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18517,7 +18571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038946601}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18548,7 +18602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1040880338}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18579,7 +18633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1043851600}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: leg_joint.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26156,7 +26210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1085642858}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26232,7 +26286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1128507132}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26263,7 +26317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1154527256}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26355,6 +26409,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -26425,6 +26483,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -33983,7 +34045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1229998195}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34013,7 +34075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1244066148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: jet.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41586,7 +41648,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13798
+  m_Name: pb_Mesh15760
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -41745,7 +41807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278850381}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41778,7 +41840,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1300459799}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41809,7 +41871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1302378745}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41842,7 +41904,7 @@ GameObject:
   - component: {fileID: 1317067426}
   - component: {fileID: 1317067425}
   - component: {fileID: 1317067427}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41977,7 +42039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339444223}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42012,7 +42074,7 @@ GameObject:
   - component: {fileID: 1343992562}
   m_Layer: 0
   m_Name: untitled
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49636,7 +49698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1387022461}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49666,7 +49728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1407105589}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49697,7 +49759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420843810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49728,7 +49790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1444392437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: jet.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49759,7 +49821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446300195}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: leg_joint.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49790,7 +49852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460365387}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_joint.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49821,7 +49883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1486011739}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49852,7 +49914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1488687243}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: jet.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49883,7 +49945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1497857200}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jet.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49914,7 +49976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500400279}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: leg_joint.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49945,7 +50007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504227516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: jet.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49976,7 +50038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1518645434}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: jet.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50012,7 +50074,7 @@ GameObject:
   - component: {fileID: 1548034908}
   m_Layer: 0
   m_Name: Cube.001
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50099,7 +50161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1564422593}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50129,7 +50191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1565740116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50161,7 +50223,7 @@ GameObject:
   - component: {fileID: 1575897353}
   - component: {fileID: 1575897354}
   - component: {fileID: 1575897355}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50273,7 +50335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576751324}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: arm1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50306,7 +50368,7 @@ GameObject:
   - component: {fileID: 1591245859}
   - component: {fileID: 1591245858}
   - component: {fileID: 1591245860}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50441,7 +50503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1591509223}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jet.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50475,7 +50537,8 @@ GameObject:
   - component: {fileID: 1594980254}
   - component: {fileID: 1594980252}
   - component: {fileID: 1594980253}
-  m_Layer: 0
+  - component: {fileID: 1594980257}
+  m_Layer: 11
   m_Name: bunkasai_player (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50493,7 +50556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a26c7b74003b064cbbfc84b2e7f48b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 1469346566701304, guid: a914834700faf7d4788836c1d8065479, type: 2}
+  bomb: {fileID: 1469346566701304, guid: 9d7ea3a62d0414a45bd9b461c9e9c935, type: 2}
 --- !u!114 &1594980253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50565,6 +50628,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1594980257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594980251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888b1fdb7ec185548b6510c01c062fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armerPoint: 100
+  damage: 10
 --- !u!1 &1595106987
 GameObject:
   m_ObjectHideFlags: 0
@@ -50574,7 +50650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1595106988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50605,7 +50681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1604047166}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_joint.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50636,7 +50712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1610027170}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50669,7 +50745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1621929096}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50696,7 +50772,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh14174
+  m_Name: pb_Mesh16138
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -50860,7 +50936,7 @@ GameObject:
   - component: {fileID: 1658364381}
   m_Layer: 0
   m_Name: Cube.001
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51009,6 +51085,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -51021,7 +51101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1719911881}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jet.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51051,7 +51131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1738143367}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: jet.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51081,7 +51161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1740240952}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: foot.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51113,7 +51193,7 @@ GameObject:
   - component: {fileID: 1766099373}
   - component: {fileID: 1766099372}
   - component: {fileID: 1766099374}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51248,7 +51328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1768785966}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: jet.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51279,7 +51359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1771354273}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51310,7 +51390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1787512977}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: arm1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51341,7 +51421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1798065705}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51372,7 +51452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1807992440}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51406,7 +51486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1808874371}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51436,7 +51516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1824079540}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: arm1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51467,7 +51547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1829973032}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jet.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51499,7 +51579,7 @@ GameObject:
   - component: {fileID: 1844672856}
   m_Layer: 0
   m_Name: Pillar
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51528,7 +51608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1883800856}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jet.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51554,7 +51634,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13930
+  m_Name: pb_Mesh15884
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -51713,7 +51793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915857730}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51802,6 +51882,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -51814,7 +51898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1949280715}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: arm1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51845,7 +51929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968310028}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51876,7 +51960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968618682}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51907,7 +51991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1990359985}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: leg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59484,7 +59568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2004679102}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: foot.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59514,7 +59598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2006169198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59545,7 +59629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2013449643}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59576,7 +59660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2038196346}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59606,7 +59690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2039416461}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59695,6 +59779,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+    - target: {fileID: 100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ec2b489a4d1554f9274ff44f3e6033, type: 3}
   m_IsPrefabAsset: 0
@@ -67253,7 +67341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093848217}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: hand.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67283,7 +67371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2094377775}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67314,7 +67402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130264798}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67345,7 +67433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139204198}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: jet.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
