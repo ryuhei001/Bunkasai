@@ -46,7 +46,7 @@ MonoBehaviour:
   m_ActualView: {fileID: 17}
 =======
     y: 0
-    width: 229
+    width: 215
     height: 717
   m_MinSize: {x: 143, y: 29}
   m_MaxSize: {x: 4000, y: 4000}
@@ -76,6 +76,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1060
     height: 931
   m_MinSize: {x: 202, y: 442}
@@ -84,11 +85,18 @@ MonoBehaviour:
   controlID: 41
 =======
     width: 990
+=======
+    width: 919
+>>>>>>> stage2
     height: 717
   m_MinSize: {x: 347, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 171
+>>>>>>> stage2
+=======
+  controlID: 226
 >>>>>>> stage2
 --- !u!114 &4
 MonoBehaviour:
@@ -116,7 +124,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
 =======
     y: 717
-    width: 990
+    width: 919
     height: 360
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
@@ -143,6 +151,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1904
     height: 30
   m_MinSize: {x: 0, y: 0}
@@ -150,11 +159,18 @@ MonoBehaviour:
   m_LastLoadedLayoutName: 
 =======
     width: 990
+=======
+    width: 919
+>>>>>>> stage2
     height: 1077
   m_MinSize: {x: 347, y: 321}
   m_MaxSize: {x: 8004, y: 8021}
   vertical: 1
+<<<<<<< HEAD
   controlID: 170
+>>>>>>> stage2
+=======
+  controlID: 225
 >>>>>>> stage2
 --- !u!114 &6
 MonoBehaviour:
@@ -231,10 +247,14 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 1077
-  m_MinSize: {x: 1058, y: 321}
-  m_MaxSize: {x: 26010, y: 10021}
+  m_MinSize: {x: 1056, y: 321}
+  m_MaxSize: {x: 26008, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 169
+>>>>>>> stage2
+=======
+  controlID: 224
 >>>>>>> stage2
 --- !u!114 &9
 MonoBehaviour:
@@ -275,6 +295,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1442
     y: 0
     width: 462
@@ -284,8 +305,11 @@ MonoBehaviour:
   m_ActualView: {fileID: 14}
 =======
     x: 990
+=======
+    x: 919
+>>>>>>> stage2
     y: 0
-    width: 240
+    width: 230
     height: 1077
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -310,6 +334,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 382
@@ -319,8 +344,11 @@ MonoBehaviour:
   m_ActualView: {fileID: 18}
 =======
     x: 1230
+=======
+    x: 1149
+>>>>>>> stage2
     y: 0
-    width: 269
+    width: 341
     height: 1077
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
@@ -345,6 +373,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 410
     width: 382
@@ -354,11 +383,14 @@ MonoBehaviour:
   m_ActualView: {fileID: 15}
 =======
     x: 1499
+=======
+    x: 1490
+>>>>>>> stage2
     y: 0
-    width: 421
+    width: 430
     height: 1077
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
 >>>>>>> stage2
   m_Panes:
@@ -386,6 +418,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 8
     y: 496
     width: 1058
@@ -393,8 +426,11 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
 =======
     x: 229
+=======
+    x: 215
+>>>>>>> stage2
     y: 0
-    width: 761
+    width: 704
     height: 717
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
@@ -462,14 +498,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1070
     y: 510
     width: 378
     height: 500
 =======
     x: 1505
+=======
+    x: 1501
+>>>>>>> stage2
     y: 92
-    width: 415
+    width: 419
     height: 1056
 >>>>>>> stage2
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -486,19 +526,27 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/OutlineEffect
 =======
     - Assets
 >>>>>>> stage2
+=======
+    - Assets/stage/bridge
+>>>>>>> stage2
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/OutlineEffect
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Bunkasai"
 =======
   - Assets
+=======
+  - Assets/stage/bridge
+>>>>>>> stage2
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\RYUHEI\Documents\GitHub\Bunkasai
 >>>>>>> stage2
@@ -507,6 +555,7 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 580f0000
     m_LastClickedID: 3928
     m_ExpandedIDs: 00000000360a0000b80c0000840e0000
@@ -514,6 +563,11 @@ MonoBehaviour:
     m_SelectedIDs: e22a0000
     m_LastClickedID: 10978
     m_ExpandedIDs: 00000000e02a0000562c0000d22e0000122f0000
+>>>>>>> stage2
+=======
+    m_SelectedIDs: 2a2b0000
+    m_LastClickedID: 11050
+    m_ExpandedIDs: 00000000322d00007e2d0000d82d0000dc2d0000ce2e0000de2e0000e42e0000582f00006c2f0000243000002e310000e43100002c320000de3200006437000066370000
 >>>>>>> stage2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -543,9 +597,13 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000360a0000b80c0000840e0000
 =======
     m_ExpandedIDs: 00000000e02a0000562c0000d22e0000122f0000
+>>>>>>> stage2
+=======
+    m_ExpandedIDs: 00000000322d00007e2d0000d82d0000dc2d0000ce2e0000de2e0000e42e0000582f00006c2f0000243000002e310000e43100002c320000de3200006437000066370000
 >>>>>>> stage2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -572,6 +630,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
@@ -581,6 +640,12 @@ MonoBehaviour:
     m_LastClickedInstanceID: 14908
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 3c3a0000
+>>>>>>> stage2
+=======
+    m_SelectedInstanceIDs: 282d0000
+    m_LastClickedInstanceID: 11560
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 3c3a0000282d0000
 >>>>>>> stage2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -633,7 +698,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 227
+    width: 213
     height: 696
   m_PersistentViewDataDictionary: {fileID: 0}
   dragSelectMode: 2
@@ -660,10 +725,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 92
-    width: 1054
-    height: 697
+    x: 228
+    y: 100
+    width: 716
+    height: 685
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &17
 MonoBehaviour:
@@ -687,14 +752,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 8
     y: 100
     width: 1058
     height: 375
 =======
     x: 231
+=======
+    x: 217
+>>>>>>> stage2
     y: 92
-    width: 757
+    width: 700
     height: 696
 >>>>>>> stage2
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -709,6 +778,7 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -529
     m_HBaseRangeMax: 529
     m_VBaseRangeMin: -179
@@ -718,6 +788,12 @@ MonoBehaviour:
     m_HBaseRangeMax: 378.5
     m_VBaseRangeMin: -213
     m_VBaseRangeMax: 213
+>>>>>>> stage2
+=======
+    m_HBaseRangeMin: -350
+    m_HBaseRangeMax: 350
+    m_VBaseRangeMin: -197
+    m_VBaseRangeMax: 197
 >>>>>>> stage2
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -737,6 +813,7 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 1058
       height: 358
     m_Scale: {x: 1, y: 1}
@@ -747,6 +824,12 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 378.5, y: 339.5}
 >>>>>>> stage2
+=======
+      width: 700
+      height: 679
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 350, y: 339.5}
+>>>>>>> stage2
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -754,14 +837,18 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -529
       y: -179
       width: 1058
       height: 358
 =======
       x: -378.5
+=======
+      x: -350
+>>>>>>> stage2
       y: -339.5
-      width: 757
+      width: 700
       height: 679
 >>>>>>> stage2
     m_MinimalGUI: 1
@@ -769,9 +856,13 @@ MonoBehaviour:
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1058, y: 375}
 =======
   m_LastWindowPixelSize: {x: 757, y: 696}
+>>>>>>> stage2
+=======
+  m_LastWindowPixelSize: {x: 700, y: 696}
 >>>>>>> stage2
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -832,7 +923,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 809
-    width: 988
+    width: 917
     height: 339
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &20
@@ -855,10 +946,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 354
-    y: 92
-    width: 700
-    height: 697
+    x: 228
+    y: 100
+    width: 716
+    height: 685
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -914,27 +1005,27 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 992
+    x: 921
     y: 92
-    width: 236
+    width: 226
     height: 1056
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 72aeccff28ffcfff8828d0ffd0fbffff000000008c30000096300000c4300000
+    m_SelectedIDs: 18340000
+    m_LastClickedID: 13336
+    m_ExpandedIDs: b0fbffff000000001e3400002a3400007a340000a2340000be350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Plane
-      m_OriginalName: Plane
+      m_Name: bunkasai_player (2)
+      m_OriginalName: bunkasai_player (2)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 12452
+      m_UserData: 13758
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -967,9 +1058,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1501
+    x: 1492
     y: 92
-    width: 419
+    width: 428
     height: 1056
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -1001,9 +1092,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1232
+    x: 1151
     y: 92
-    width: 265
+    width: 337
     height: 1056
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -1018,20 +1109,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/stage/bridge/Textures
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/stage/bridge/Textures
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\RYUHEI\Documents\GitHub\Bunkasai
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e02a0000
-    m_LastClickedID: 10976
-    m_ExpandedIDs: 00000000e02a0000562c0000d22e0000122f0000903200009832000000ca9a3b
+    m_SelectedIDs: 70320000
+    m_LastClickedID: 12912
+    m_ExpandedIDs: 00000000322d00007e2d0000d82d0000dc2d0000ce2e0000de2e0000e42e0000582f00006c2f0000243000002e310000e43100002c320000de320000643700006637000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1059,7 +1150,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e02a0000562c0000d22e0000122f0000
+    m_ExpandedIDs: 00000000322d00007e2d0000d82d0000dc2d0000ce2e0000de2e0000e42e0000582f00006c2f0000243000002e310000e43100002c320000de3200006437000066370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1087,21 +1178,21 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 401f0000b21c0000f61c0000242e00001a310000fa360000542a0000c02d0000c8370000e22700005c2a00007e2b00000000000044610000da310000562e00003c3a0000e82a0000
+    m_ExpandedInstanceIDs: 401f0000b21c0000f61c0000242e00001a310000fa360000542a0000c02d0000c8370000e22700005c2a00007e2b00000000000044610000da310000562e00003c3a0000e82a0000282d0000722d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Plane
-      m_OriginalName: Plane
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -3253198
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 4
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
@@ -1113,7 +1204,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
-  m_DirectoriesAreaWidth: 123
+  m_DirectoriesAreaWidth: 110
 --- !u!114 &24
 >>>>>>> stage2
 MonoBehaviour:
@@ -1136,6 +1227,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 8
     y: 496
     width: 1058
@@ -1145,17 +1237,25 @@ MonoBehaviour:
   lastFramingTime: 124.33770285415534
 =======
     x: 231
+=======
+    x: 217
+>>>>>>> stage2
     y: 92
-    width: 757
+    width: 700
     height: 696
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
+<<<<<<< HEAD
   lastFramingTime: 41373.667613487676
+>>>>>>> stage2
+=======
+  lastFramingTime: 950.8786477165932
 >>>>>>> stage2
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 10.419748, y: 6.847479, z: 6.33424}
     speed: 2
@@ -1164,6 +1264,11 @@ MonoBehaviour:
     m_Target: {x: 14.078125, y: 52.429688, z: 2.421875}
     speed: 2
     m_Value: {x: 14.078125, y: 52.429688, z: 2.421875}
+>>>>>>> stage2
+=======
+    m_Target: {x: -130.84375, y: 99.4375, z: 46}
+    speed: 2
+    m_Value: {x: -130.84375, y: 99.4375, z: 46}
 >>>>>>> stage2
   m_RenderMode: 0
   m_CameraMode:
@@ -1193,6 +1298,7 @@ MonoBehaviour:
       m_Value: 0
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.21294019, y: 0.044534203, z: -0.009716423, w: -0.97600144}
     speed: 2
     m_Value: {x: -0.21294019, y: 0.044534203, z: -0.009716422, w: -0.9760014}
@@ -1202,12 +1308,19 @@ MonoBehaviour:
     m_Value: 74.33583
 =======
     m_Target: {x: -0.00468218, y: 0.9538851, z: -0.299781, w: -0.014881835}
+=======
+    m_Target: {x: 0.21794789, y: 0.34123534, z: -0.08166143, w: 0.9107102}
+>>>>>>> stage2
     speed: 2
-    m_Value: {x: -0.0046821595, y: 0.95388085, z: -0.29977968, w: -0.01488177}
+    m_Value: {x: 0.2179474, y: 0.34123456, z: -0.08166125, w: 0.9107081}
   m_Size:
-    m_Target: 114.73735
+    m_Target: 420.63535
     speed: 2
+<<<<<<< HEAD
     m_Value: 114.73735
+>>>>>>> stage2
+=======
+    m_Value: 420.63535
 >>>>>>> stage2
   m_Ortho:
     m_Target: 0
