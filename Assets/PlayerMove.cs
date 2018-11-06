@@ -53,8 +53,6 @@ public class PlayerMove : MonoBehaviour {
 		chCon.Move (moveDir*Time.deltaTime);
 	}
 
-    private void OnTriggerEnter(BombScript){
-        Debug.Log("ダメージ");
-    }
+
 
 }

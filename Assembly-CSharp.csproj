@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Detect.cs" />
     <Compile Include="Assets\GameSystem.cs" />
     <Compile Include="Assets\HitPoint.cs" />
     <Compile Include="Assets\PlayerMotion.cs" />
