@@ -24,7 +24,7 @@ public class PlayerMove2 : MonoBehaviour {
 	void Update () {
 		CharacterController chCon = GetComponent<CharacterController> ();
 
-		Debug.Log ("worldPosition"+transform.TransformDirection(moveDir));
+		//Debug.Log ("worldPosition"+transform.TransformDirection(moveDir));
 		if (!chCon.isGrounded) {
 			if (Physics.Linecast (rayPos.position, (rayPos.position - transform.up * rayRan))) {
 				isGround = true;
@@ -45,9 +45,9 @@ public class PlayerMove2 : MonoBehaviour {
 			} else {
 				moveDir.y -= gra * Time.deltaTime;
 			}
-			Debug.Log ("true");
+			//Debug.Log ("true");
 		} else {
-			Debug.Log ("false");
+			//Debug.Log ("false");
 		}
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);

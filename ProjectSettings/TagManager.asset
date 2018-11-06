@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - bomb
+  - HitPoint1
+  - bunkasai_player1
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - bomb
+  - player
   - 
   - 
   - 
