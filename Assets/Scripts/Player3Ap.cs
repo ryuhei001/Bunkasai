@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player3Ap : MonoBehaviour {
-	public int armerPoint = 100;
-	public int damage = 10;
+    GameObject player3;
+    Slider HP_Slider3;
+	public int armerPoint3 = 100;
+	public int damage3 = 10;
 	// Use this for initialization
 	void Start () {
-
+        player3 = GameObject.FindWithTag("bunkasai_player(2)");
+        HP_Slider3 = GameObject.FindWithTag("HitPoint3").GetComponent<Slider>();
+        armerPoint3 = 100;
 	}
 
 	// Update is called once per frame
@@ -17,9 +22,11 @@ public class Player3Ap : MonoBehaviour {
 	private void OnCollisionEnter(Collision collider){
 		if(collider.gameObject.tag=="Player2Shot"||collider.gameObject.tag=="Player4Shot"
 			||collider.gameObject.tag=="Player1Shot"){
-			armerPoint -= damage;
+			armerPoint3 -= damage3;
+            HP_Slider3.value = armerPoint3;
+          
 		}
-		if(armerPoint<0){
+		if(armerPoint3<0){
 			Destroy(gameObject);
 		}
 	}

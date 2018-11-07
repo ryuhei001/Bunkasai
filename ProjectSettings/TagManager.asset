@@ -9,6 +9,14 @@ TagManager:
   - Player2Shot
   - Player3Shot
   - Player4Shot
+  - bunkasai_player(1)
+  - bunkasai_player(2)
+  - HitPoint2
+  - bunkasai_player(3)
+  - bunkasai_player
+  - HitPoint1
+  - HitPoint3
+  - HitPoint4
   layers:
   - Default
   - TransparentFX
