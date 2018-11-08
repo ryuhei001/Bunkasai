@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GamepadInput;
 
 public class PlayerMove : MonoBehaviour {
 	public float speed = 15f;
@@ -8,6 +9,7 @@ public class PlayerMove : MonoBehaviour {
 	public float gra = 20f;
 	private Vector3 moveDir = Vector3.zero;
 	public float rotSpeed = 10f;
+    private GamepadState inputState = GamepadInput.GamePad.GetState(GamePad.Index.One);
 	// Use this for initialization
 	private AnimatorStateInfo animInfo;
 	private Animator anim;
@@ -32,7 +34,6 @@ public class PlayerMove : MonoBehaviour {
 				isGround = false;
 			}
 		}
-
 		if (chCon.isGrounded||isGround) {
 			moveDir = new Vector3 (0, 0, Input.GetAxis ("Vertical"));
 			moveDir = transform.TransformDirection (moveDir);
