@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player1Ap : MonoBehaviour {
     GameObject player1;
@@ -27,6 +28,7 @@ public class Player1Ap : MonoBehaviour {
 		}
 		if(armerPoint1<0){
 			Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
 		}
 	}
 }
