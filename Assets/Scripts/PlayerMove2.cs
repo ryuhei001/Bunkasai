@@ -47,7 +47,7 @@ public class PlayerMove2 : MonoBehaviour {
 			}
 			//Debug.Log ("true");
 		} else {
-			//Debug.Log ("false");
+			//Debug.Log ("false2");
 		}
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);
