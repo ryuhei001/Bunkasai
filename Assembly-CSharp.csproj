@@ -116,6 +116,7 @@
     <Compile Include="Assets\ProCore\ProGrids\MonoBehaviour\pg_IgnoreSnap.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Ranking.cs" />
+    <Compile Include="Assets\RankingScript.cs" />
     <Compile Include="Assets\Scripts\BombScript.cs" />
     <Compile Include="Assets\Scripts\Player1Ap.cs" />
     <Compile Include="Assets\Scripts\Player2Ap.cs" />

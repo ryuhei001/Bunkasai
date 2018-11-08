@@ -8,6 +8,12 @@ public class Player4Ap : MonoBehaviour {
     Slider HP_Slider4;
 	public int armerPoint4 = 100;
 	public int damage4 = 10;
+    [SerializeField] GameObject OtherCamera1;
+    [SerializeField] GameObject OtherCamera2;
+    [SerializeField] GameObject OtherCamera3;
+    [SerializeField] GameObject OtherCamera4;
+    
+
 	// Use this for initialization
 	void Start () {
         player4 = GameObject.FindWithTag("bunkasai_player(3)");

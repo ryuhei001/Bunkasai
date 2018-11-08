@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 public class Player1Ap : MonoBehaviour {
     
     GameObject player1;
-    [SerializeField]GameObject MainCamera1;
-    [SerializeField]GameObject OtherCamera1;
+    [SerializeField] GameObject OtherCamera1;
+    [SerializeField] GameObject OtherCamera2;
+    [SerializeField] GameObject OtherCamera3;
+    [SerializeField] GameObject OtherCamera4;
     Slider HP_Slider1;
 	public int armerPoint1 = 100;
 	public int damage1 = 10;
-    public int Ranking = 4;
-    [SerializeField]Text Rank;
+    int Ranking01;
 
 	// Use this for initialization
 	void Start () {
@@ -36,8 +37,10 @@ public class Player1Ap : MonoBehaviour {
 		}
 		if(armerPoint1<0){
             OtherCamera1.SetActive(true);
-            Rank.text = "順位" + Ranking + "位";
-            Ranking -= 1;
+            Ranking01 = GetComponent<RankingScript>().Ranking;
+            GetComponent<RankingScript>().ReturnAccess();
+            GetComponent<RankingScript>().Ranking -= 1;
+            //Ranking01 -= 1;
             Destroy(player1);
 
 		}
