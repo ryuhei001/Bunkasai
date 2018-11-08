@@ -1,16 +1,8 @@
 ﻿<Properties StartupConfiguration="{6363FAB5-2A4D-BBAD-2EA5-D61A61E98F37}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Ranking.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/imageFlashing.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player1Ap.cs" Line="30" Column="24" />
-      <File FileName="Assets/Scripts/Player2Ap.cs" Line="26" Column="26" />
-      <File FileName="Assets/Scripts/Player3Ap.cs" Line="27" Column="11" />
-<<<<<<< HEAD
-      <File FileName="Assets/Scripts/Player4Ap.cs" Line="27" Column="1" />
-=======
-      <File FileName="Assets/Scripts/Player4Ap.cs" Line="27" Column="13" />
-      <File FileName="Assets/Ranking.cs" Line="13" Column="3" />
->>>>>>> c52fd0baf429f6c67cfefd9d4ef1953c4a3e0bcd
+      <File FileName="Assets/imageFlashing.cs" Line="5" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
