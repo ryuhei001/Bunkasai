@@ -9,7 +9,7 @@ public class PlayerMove : MonoBehaviour {
 	public float gra = 20f;
 	private Vector3 moveDir = Vector3.zero;
 	public float rotSpeed = 10f;
-    private GamepadState inputState = GamepadInput.GamePad.GetState(GamePad.Index.One);
+
 	// Use this for initialization
 	private AnimatorStateInfo animInfo;
 	private Animator anim;
@@ -24,17 +24,20 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		GamepadState inSta = GamepadInput.GamePad.GetState(GamePad.Index.Two);
 		CharacterController chCon = GetComponent<CharacterController> ();
 
 		//Debug.Log ("worldPosition"+transform.TransformDirection(moveDir));
 		if (!chCon.isGrounded) {
 			if (Physics.Linecast (rayPos.position, (rayPos.position - transform.up * rayRan))) {
 				isGround = true;
+				Debug.Log ("Debug");
 			} else {
 				isGround = false;
 			}
-		}
 		if (chCon.isGrounded||isGround) {
+				if (inSta.X == true) {
+				}
 			moveDir = new Vector3 (0, 0, Input.GetAxis ("Vertical"));
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= speed;
@@ -53,4 +56,11 @@ public class PlayerMove : MonoBehaviour {
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);
 	}
+		if(inSta.X == true){
+			Debug.Log ("X");
+		}else{
+			Debug.Log("IsNotX");
+		}
+
+}
 }
