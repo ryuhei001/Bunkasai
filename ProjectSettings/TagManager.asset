@@ -17,6 +17,7 @@ TagManager:
   - HitPoint1
   - HitPoint3
   - HitPoint4
+  - MainCamera1
   layers:
   - Default
   - TransparentFX

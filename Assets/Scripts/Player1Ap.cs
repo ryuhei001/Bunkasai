@@ -5,19 +5,27 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player1Ap : MonoBehaviour {
+    
     GameObject player1;
+    [SerializeField]GameObject MainCamera1;
+    [SerializeField]GameObject OtherCamera1;
     Slider HP_Slider1;
 	public int armerPoint1 = 100;
 	public int damage1 = 10;
+    public int Ranking = 4;
+    [SerializeField]Text Rank;
+
 	// Use this for initialization
 	void Start () {
         player1 = GameObject.FindWithTag("bunkasai_player");
         HP_Slider1 = GameObject.FindWithTag("HitPoint1").GetComponent<Slider>();
         armerPoint1 = 100;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
+
+
 		
 	}
 	private void OnCollisionEnter(Collision collider){
@@ -27,8 +35,11 @@ public class Player1Ap : MonoBehaviour {
             HP_Slider1.value = armerPoint1;
 		}
 		if(armerPoint1<0){
-			Destroy(gameObject);
-            SceneManager.LoadScene("GameOver");
+            OtherCamera1.SetActive(true);
+            Rank.text = "順位" + Ranking + "位";
+            Ranking -= 1;
+            Destroy(player1);
+
 		}
 	}
 }

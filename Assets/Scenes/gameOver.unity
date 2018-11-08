@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dfa94a1e0e064dabb57f5d9b2f0d0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Rank: {fileID: 0}
 --- !u!1 &73176905
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,8 +404,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -485,6 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dfa94a1e0e064dabb57f5d9b2f0d0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Rank: {fileID: 0}
 --- !u!114 &1749726678
 MonoBehaviour:
   m_ObjectHideFlags: 0
