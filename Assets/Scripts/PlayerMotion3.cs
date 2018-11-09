@@ -27,7 +27,7 @@ public class PlayerMotion3 : MonoBehaviour {
         } else {
             ani.SetInteger("Vertical", 0);
         }
-		if (inSta.A==true)
+		if (GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.Three))
         {
             GameObject newBomb = Instantiate(bomb,gun.transform.position, Camera.transform.rotation);
             newBomb.GetComponent<BombScript1>().SetVelocity(transform.forward);

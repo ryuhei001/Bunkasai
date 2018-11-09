@@ -11,6 +11,8 @@ public class PlayerMotion : MonoBehaviour {
     public Transform Camera;
     private AudioSource[] audioSources;
 
+
+
 	// Use this for initialization
 	void Start () {
         audioSources = gameObject.GetComponents<AudioSource>();
@@ -27,7 +29,7 @@ public class PlayerMotion : MonoBehaviour {
         } else {
             ani.SetInteger("Vertical", 0);
         }
-		if (inSta.A==true)
+        if (GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.One))
         {
             GameObject newBomb = Instantiate(bomb,gun.transform.position, Camera.transform.rotation);
             newBomb.GetComponent<BombScript1>().SetVelocity(transform.forward);
