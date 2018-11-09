@@ -17,6 +17,7 @@ TagManager:
   - HitPoint1
   - HitPoint3
   - HitPoint4
+  - MainCamera1
   layers:
   - Default
   - TransparentFX
@@ -53,4 +54,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: black
+    uniqueID: 2108039721
     locked: 0
