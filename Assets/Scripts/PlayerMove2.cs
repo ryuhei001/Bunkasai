@@ -85,8 +85,10 @@ public class PlayerMove2 : MonoBehaviour {
 				moveDir = new Vector3 (0, 0, 0);
 			}
 			moveDir = transform.TransformDirection (moveDir);
-			moveDir *= speed;			Vector3 angles = mainCam.eulerAngles;
-			if(angles.x > 180 && angles.x < 340 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Two).y > 0)
+			moveDir *= speed;			
+            Vector3 angles = mainCam.eulerAngles;
+            transform.Rotate(0, GamePad.GetAxis(GamePad.Axis.LeftStick, GamePad.Index.One).x * rotSpeed, 0);
+            if (angles.x > 180 && angles.x < 340 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Two).y > 0)
 			{
 				angles = new Vector3(340, angles.y, angles.z);
 			}
