@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{6363FAB5-2A4D-BBAD-2EA5-D61A61E98F37}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMotion4.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RankImage4.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMotion.cs" Line="32" Column="69" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="54" Column="68" />
-      <File FileName="Assets/Scripts/PlayerMotion2.cs" Line="30" Column="62" />
-      <File FileName="Assets/Scripts/PlayerMotion3.cs" Line="30" Column="64" />
-      <File FileName="Assets/Scripts/PlayerMotion4.cs" Line="30" Column="62" />
+      <File FileName="Assets/Scripts/Player1Ap.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player2Ap.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player3Ap.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player4Ap.cs" Line="1" Column="1" />
+      <File FileName="Assets/RankImage.cs" Line="1" Column="1" />
+      <File FileName="Assets/RankImage2.cs" Line="1" Column="1" />
+      <File FileName="Assets/RankImage3.cs" Line="1" Column="1" />
+      <File FileName="Assets/RankImage4.cs" Line="1" Column="1" />
+      <File FileName="Assets/RankSystem1.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
