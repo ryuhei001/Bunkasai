@@ -17,8 +17,14 @@ public class PlayerMove : MonoBehaviour {
 	public float rayRan = 0.85f;
 	public bool isGround;
     private Transform mainCam;
+    //for boost
+    Rigidbody rigidBody;
+    public float touchDelay = 0.5f;
+    public bool isBoostF = false;
+    public bool isMashF;
 	void Start () {
         mainCam = transform.Find("Main Camera1");
+        rigidBody = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -36,6 +42,28 @@ public class PlayerMove : MonoBehaviour {
 			}
 		}
 		if (chCon.isGrounded||isGround) {
+            if (isMashF == false)
+            {
+                if(GamePad.GetButtonUp(GamePad.Button.B, GamePad.Index.One) {
+                    isMashF = true;
+                }
+            }else {
+                if(isBoostF == false) {
+                    if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.One) {
+                        if (touchDelay >= 0)
+                        {
+                            isBoostF = true;
+                        }
+                    }
+                }else {
+                    if(GamePad.GetButtonUp(GamePad.Button.B, GamePad.Index.One) {
+                        isMashF = false;
+                        isBoostF = false;
+                    }
+                }
+                
+                touchDelay -= Time.deltaTime;
+            }
 			if (inSta.X == true) {
 				moveDir = new Vector3 (0, 0, 1);
 			} else if (inSta.B) {
@@ -106,5 +134,8 @@ public class PlayerMove : MonoBehaviour {
 
 		/*moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);*/
+    void BoostF() {
+
+    }
 }
 
