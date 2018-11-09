@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GamepadInput;
 
 public class PlayerMotion2 : MonoBehaviour {
     public GameObject bomb;
 
 	private Animator ani;
+    public Transform gun;
+    public Transform Camera;
+
 	// Use this for initialization
 	void Start () {
 		ani = GetComponent<Animator>();
@@ -13,18 +17,18 @@ public class PlayerMotion2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetAxis ("Vertical2") > 0) {
-			ani.SetInteger ("Vertical", 1);
-
-		} else {
-			ani.SetInteger ("Vertical",0);
-		}
-		ani.SetBool ("Jump", Input.GetButton ("Jump"));
-        //射撃処理
-        if (Input.GetMouseButtonUp(0))
+		GamepadState inSta = GamepadInput.GamePad.GetState(GamePad.Index.Two);
+		if (inSta.B == true) {
+            ani.SetInteger("Vertical", 1);
+		} else if ( inSta.X == true) {
+            ani.SetInteger("Vertical", -1);
+        } else {
+            ani.SetInteger("Vertical", 0);
+        }
+		if (inSta.A==true)
         {
-            GameObject newBomb = Instantiate(bomb, new Vector3(transform.position.x, transform.position.y + 4.93f, transform.position.z), transform.rotation);
-            newBomb.GetComponent<BombScript>().SetVelocity(transform.forward);
+            GameObject newBomb = Instantiate(bomb,gun.transform.position, Camera.transform.rotation);
+            newBomb.GetComponent<BombScript1>().SetVelocity(transform.forward);
         }
 	}
 }

@@ -7,6 +7,9 @@ public class PlayerMotion : MonoBehaviour {
     public GameObject bomb;
 
 	private Animator ani;
+    public Transform gun;
+    public Transform Camera;
+
 	// Use this for initialization
 	void Start () {
 		ani = GetComponent<Animator>();
@@ -24,8 +27,8 @@ public class PlayerMotion : MonoBehaviour {
         }
 		if (inSta.A==true)
         {
-            GameObject newBomb = Instantiate(bomb, new Vector3(transform.position.x, transform.position.y + 4.93f, transform.position.z), transform.rotation);
-            newBomb.GetComponent<BombScript>().SetVelocity(transform.forward);
+            GameObject newBomb = Instantiate(bomb,gun.transform.position, Camera.transform.rotation);
+            newBomb.GetComponent<BombScript1>().SetVelocity(transform.forward);
         }
 	}
 }
