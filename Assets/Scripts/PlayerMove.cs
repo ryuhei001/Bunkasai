@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour {
 	public bool isGround;
     private Transform mainCam;
     //for boost
+    public float boostSpeed = 1.0f;
     Rigidbody rigidBody;
     public float touchDelay = 0.5f;
     public bool isBoostF = false;
@@ -53,6 +54,7 @@ public class PlayerMove : MonoBehaviour {
                         if (touchDelay >= 0)
                         {
                             isBoostF = true;
+                            rigidBody.AddForce(transform.forward * boostSpeed, ForceMode.Acceleration);
                         }
                     }
                 }else {
