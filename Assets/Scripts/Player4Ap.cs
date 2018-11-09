@@ -4,22 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Player4Ap : MonoBehaviour {
+    [SerializeField] GameObject OtherCamera4;
     GameObject player4;
     Slider HP_Slider4;
 	public int armerPoint4 = 100;
 	public int damage4 = 10;
-<<<<<<< HEAD
     private AudioSource[] audioSources;
     // Use this for initialization
     void Start () {
         audioSources = gameObject.GetComponents<AudioSource>();
-=======
-    [SerializeField] GameObject OtherCamera4;
-    
-
-	// Use this for initialization
-	void Start () {
->>>>>>> Hantei2
         player4 = GameObject.FindWithTag("bunkasai_player(3)");
         HP_Slider4 = GameObject.FindWithTag("HitPoint4").GetComponent<Slider>();
         armerPoint4 = 100;
@@ -40,13 +33,9 @@ public class Player4Ap : MonoBehaviour {
 
 		}
 		if(armerPoint4<0){
-<<<<<<< HEAD
             audioSources[1].Play();
-            Destroy(gameObject);
-=======
             OtherCamera4.SetActive(true);
-			Destroy(gameObject);
->>>>>>> Hantei2
+			Destroy(player4);
 		}
 	}
 }

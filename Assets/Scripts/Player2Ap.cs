@@ -11,14 +11,9 @@ public class Player2Ap : MonoBehaviour {
     Slider HP_Slider2;
 	public int armerPoint2 = 100;
 	public int damage2 = 10;
-<<<<<<< HEAD
     private AudioSource[] audioSources;
-    // Use this for initialization
-=======
-    int Ranking02;
 
 	// Use this for initialization
->>>>>>> Hantei2
 
     void Start () {
         audioSources = gameObject.GetComponents<AudioSource>();
@@ -42,13 +37,8 @@ public class Player2Ap : MonoBehaviour {
 		}
 
 		if(armerPoint2<0){
-<<<<<<< HEAD
             audioSources[1].Play();
-            HP_Slider2.value = 0;
-=======
-
             OtherCamera2.SetActive(true);
->>>>>>> Hantei2
             Destroy(player2);          
 		}
 	}
