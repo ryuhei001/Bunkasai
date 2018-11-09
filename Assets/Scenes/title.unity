@@ -852,7 +852,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 505150930}
-  - component: {fileID: 505150931}
   m_Layer: 0
   m_Name: GameSystem
   m_TagString: Untagged
@@ -873,17 +872,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &505150931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 505150929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc101c381b6254d49beff770ff034693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &639911281
 Prefab:
   m_ObjectHideFlags: 0
@@ -1065,14 +1053,14 @@ RectTransform:
   m_GameObject: {fileID: 716001210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.20861828, y: 0.16130939, z: 0.16130939}
+  m_LocalScale: {x: 0.12651199, y: 0.097822554, z: 0.097822554}
   m_Children: []
   m_Father: {fileID: 1589574332}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: -137}
+  m_AnchoredPosition: {x: 7, y: -80}
   m_SizeDelta: {x: 3000.0002, y: 750.00006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716001212
@@ -39692,7 +39680,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh62804
+  m_Name: pb_Mesh15760
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -47662,7 +47650,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh62922
+  m_Name: pb_Mesh16138
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

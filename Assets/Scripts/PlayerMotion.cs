@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GamepadInput;
 
 public class PlayerMotion : MonoBehaviour {
     public GameObject bomb;
@@ -14,15 +13,16 @@ public class PlayerMotion : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		GamepadState inSta = GamepadInput.GamePad.GetState(GamePad.Index.One);
-		if (inSta.X == true) {
+        if (Input.GetAxis("Vertical") > 0) {
             ani.SetInteger("Vertical", 1);
-		} else if ( inSta.B == true) {
+        } else if (Input.GetAxis("Vertical") < 0) {
             ani.SetInteger("Vertical", -1);
         } else {
             ani.SetInteger("Vertical", 0);
         }
-		if (inSta.A==true)
+		ani.SetBool ("Jump", Input.GetButton ("Jump"));
+        //射撃処理
+        if (Input.GetMouseButtonUp(0))
         {
             GameObject newBomb = Instantiate(bomb, new Vector3(transform.position.x, transform.position.y + 4.93f, transform.position.z), transform.rotation);
             newBomb.GetComponent<BombScript>().SetVelocity(transform.forward);
