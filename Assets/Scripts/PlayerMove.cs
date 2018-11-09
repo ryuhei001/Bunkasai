@@ -26,11 +26,12 @@ public class PlayerMove : MonoBehaviour {
 	public static float BOOST_SEC = 1.0f;
 	void Start () {
         mainCam = transform.Find("Main Camera1");
-        
+        playerReady = GetComponent<PlayerReady>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		CharacterController chCon = GetComponent<CharacterController> ();
 		GamepadState inSta = GamepadInput.GamePad.GetState(GamePad.Index.One);
 		Rigidbody rigidBody = GetComponent<Rigidbody>();
@@ -43,7 +44,7 @@ public class PlayerMove : MonoBehaviour {
 			}
 		}
 
-        if (chCon.isGrounded||isGround && playerReady.isGameStarted == true) {
+        if ((chCon.isGrounded||isGround) && GameSystem.ready == 4) {
             playerReady.GameStart();
             if (isMashF == false && isBoostF == false)
             {
@@ -105,11 +106,11 @@ public class PlayerMove : MonoBehaviour {
 			//Debug.Log ("true");
 		} else {
             //Debug.Log ("false2");
-            if(GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.One)) {
-                playerReady.GameReady();
-                GameSystem.ready += 1;
-            }
-
+			if(playerReady.isWaited == false){
+				if(GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.One)) {
+                	playerReady.GameReady();
+            	}
+			}
         }
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);
