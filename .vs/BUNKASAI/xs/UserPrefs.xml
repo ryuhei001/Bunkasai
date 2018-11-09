@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{6363FAB5-2A4D-BBAD-2EA5-D61A61E98F37}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMove2.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMotion2.cs">
     <Files>
       <File FileName="Assets/GamePadInput/GamePad.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMotion.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/BombScript1.cs" Line="7" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="3" Column="19" />
-      <File FileName="Assets/Scripts/PlayerMove2.cs" Line="89" Column="2" />
-      <File FileName="Assets/Scripts/PlayerMove3.cs" Line="28" Column="9" />
-      <File FileName="Assets/Scripts/PlayerMove4.cs" Line="27" Column="47" />
-      <File FileName="Assets/Scripts/titleTransition.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMotion4.cs" Line="20" Column="78" />
-      <File FileName="Assets/Scripts/PlayerMotion3.cs" Line="20" Column="79" />
-      <File FileName="Assets/Scripts/PlayerMotion2.cs" Line="20" Column="71" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="28" Column="9" />
+      <File FileName="Assets/Scripts/PlayerMotion.cs" Line="12" Column="5" />
+      <File FileName="Assets/Scripts/titleTransition.cs" Line="13" Column="32" />
+      <File FileName="Assets/Scripts/GameSystem.cs" Line="7" Column="69" />
+      <File FileName="Assets/Scripts/PlayerMotion2.cs" Line="16" Column="9" />
+      <File FileName="Assets/Scripts/PlayerMotion3.cs" Line="34" Column="36" />
+      <File FileName="Assets/Scripts/PlayerMotion4.cs" Line="34" Column="36" />
+      <File FileName="Assets/Scripts/Player1Ap.cs" Line="12" Column="40" />
+      <File FileName="Assets/Scripts/Player2Ap.cs" Line="11" Column="40" />
+      <File FileName="Assets/Scripts/Player3Ap.cs" Line="11" Column="40" />
+      <File FileName="Assets/Scripts/Player4Ap.cs" Line="11" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

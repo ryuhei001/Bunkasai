@@ -9,10 +9,12 @@ public class PlayerMotion2 : MonoBehaviour {
 	private Animator ani;
     public Transform gun;
     public Transform Camera;
+    private AudioSource[] audioSources;
 
-	// Use this for initialization
-	void Start () {
-		ani = GetComponent<Animator>();
+    // Use this for initialization
+    void Start () {
+        audioSources = gameObject.GetComponents<AudioSource>();
+        ani = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -29,6 +31,7 @@ public class PlayerMotion2 : MonoBehaviour {
         {
             GameObject newBomb = Instantiate(bomb,gun.transform.position, Camera.transform.rotation);
             newBomb.GetComponent<BombScript1>().SetVelocity(transform.forward);
+            audioSources[0].Play();
         }
 	}
 }
