@@ -7,7 +7,6 @@ public class imageFlashing : MonoBehaviour {
     public Image image;
     public float flashSpeed = 10f;
     private float time;
-    public Image titleImage;
     // Use this for initialization
 	void Start () {
 		
