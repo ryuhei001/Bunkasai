@@ -70,7 +70,7 @@ public class PlayerMove : MonoBehaviour {
             }
 			if(isBoostF) {
 				if(boostSec >= 0) {
-					chCon.Move(transform.forward * boostSpeed * boostSec * Time.deltaTime);
+					chCon.Move(transform.forward * boostSpeed * Mathf.Sqrt(boostSec)*Time.deltaTime);
 					boostSec -= Time.deltaTime;
 				}else {
 					boostSec = BOOST_SEC;
