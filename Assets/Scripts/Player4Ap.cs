@@ -15,7 +15,7 @@ public class Player4Ap : MonoBehaviour {
         audioSources = gameObject.GetComponents<AudioSource>();
         player4 = GameObject.FindWithTag("bunkasai_player(3)");
         HP_Slider4 = GameObject.FindWithTag("HitPoint4").GetComponent<Slider>();
-        armerPoint4 = 100;
+       // armerPoint4 = 100;
 	}
 
 	// Update is called once per frame
@@ -32,7 +32,7 @@ public class Player4Ap : MonoBehaviour {
             HP_Slider4.value = armerPoint4;
 
 		}
-		if(armerPoint4<0){
+		if(armerPoint4<=0){
             audioSources[1].Play();
             OtherCamera4.SetActive(true);
 			Destroy(player4);

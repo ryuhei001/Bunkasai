@@ -84,6 +84,18 @@ public class PlayerMove : MonoBehaviour {
 			} else if (inSta.X == false && inSta.B == false) {
 				moveDir = new Vector3 (0, 0, 0);
 			}
+
+			/*if(Input.GetKeyDown("KeyCode.UpArrow") == true){
+				moveDir = new Vector3(0,0,1);
+			}else if(Input.GetKeyDown("KeyCode.DownArrow") == true){
+				moveDir = new Vector3(0,0,-1);
+			}
+			if(Input.GetKeyDown("KeyCode.A") == true){
+				transform.Rotate(0,-1*rotSpeed,0);
+			}else if(Input.GetKeyDown("KeyCode.D") == true){
+				transform.Rotate(0,1*rotSpeed,0);
+			}*/
+
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= speed;
 			transform.Rotate (0, GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x * rotSpeed, 0);
@@ -100,6 +112,7 @@ public class PlayerMove : MonoBehaviour {
 			{
 				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y * rotSpeed * -1, angles.y, angles.z);
 			}
+
 			//Debug.Log ("true");
 		} else {
 			//Debug.Log ("false2");

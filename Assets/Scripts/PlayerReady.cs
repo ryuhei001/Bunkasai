@@ -23,7 +23,7 @@ public class PlayerReady : MonoBehaviour {
 	void Update ()
     {
         if (isWaited == false){
-            if (GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.One)) {
+			if (GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.One)||GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x>0) {
                 GameReady();
             }
         }

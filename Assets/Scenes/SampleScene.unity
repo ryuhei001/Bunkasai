@@ -1109,7 +1109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2836ba777896e924cab9976698c5a000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armerPoint4: 100
+  OtherCamera4: {fileID: 0}
+  armerPoint4: 0
   damage4: 10
 --- !u!82 &283965211
 AudioSource:
@@ -1425,7 +1426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3af35d4b3549ee347ae08dfecf17b281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armerPoint2: 100
+  OtherCamera2: {fileID: 0}
+  armerPoint2: 0
   damage2: 10
 --- !u!82 &301215453
 AudioSource:
@@ -3906,6 +3908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc844ee9a9e89a458c52a3b1bf44684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherCamera1: {fileID: 0}
   armerPoint1: 100
   damage1: 10
 --- !u!82 &751250620
@@ -53179,7 +53182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888b1fdb7ec185548b6510c01c062fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armerPoint3: 100
+  OtherCamera3: {fileID: 0}
+  armerPoint3: 0
   damage3: 10
 --- !u!82 &1594980258
 AudioSource:
@@ -53502,7 +53506,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh16138
+  m_Name: pb_Mesh23486
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

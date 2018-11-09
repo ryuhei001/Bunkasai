@@ -36,7 +36,7 @@ public class Player1Ap : MonoBehaviour {
 			armerPoint1 -= damage1;
             HP_Slider1.value = armerPoint1;
 		}
-		if(armerPoint1<0){
+		if(armerPoint1<=0){
             audioSources[1].Play();
             OtherCamera1.SetActive(true);
             Destroy(player1);
