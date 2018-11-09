@@ -1038,7 +1038,7 @@ MonoBehaviour:
   rayPos: {fileID: 283965209}
   rayRan: 0.85
   isGround: 0
-  boostSpeed: 1
+  boostSpeed: 100
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   rayPos: {fileID: 301215451}
   rayRan: 0.85
   isGround: 0
-  boostSpeed: 1
+  boostSpeed: 100
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
@@ -3250,7 +3250,7 @@ MonoBehaviour:
   rayPos: {fileID: 751250616}
   rayRan: 0.85
   isGround: 0
-  boostSpeed: 1
+  boostSpeed: 100
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
@@ -52260,7 +52260,7 @@ MonoBehaviour:
   rayPos: {fileID: 1594980256}
   rayRan: 0.85
   isGround: 0
-  boostSpeed: 1
+  boostSpeed: 100
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
