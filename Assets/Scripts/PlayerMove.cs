@@ -18,34 +18,53 @@ public class PlayerMove : MonoBehaviour {
 	public bool isGround;
     private Transform mainCam;
 	void Start () {
-		anim = GetComponent<Animator> ();
-        mainCam = transform.Find("Main Camera");
+        mainCam = transform.Find("Main Camera1");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		GamepadState inSta = GamepadInput.GamePad.GetState(GamePad.Index.Two);
+		GamepadState inSta = GamepadInput.GamePad.GetState(GamePad.Index.One);
 		CharacterController chCon = GetComponent<CharacterController> ();
 
 		//Debug.Log ("worldPosition"+transform.TransformDirection(moveDir));
 		if (!chCon.isGrounded) {
 			if (Physics.Linecast (rayPos.position, (rayPos.position - transform.up * rayRan))) {
 				isGround = true;
-				Debug.Log ("Debug");
+				//Debug.Log ("Debug");
 			} else {
 				isGround = false;
 			}
+		}
 		if (chCon.isGrounded||isGround) {
-				if (inSta.X == true) {
-				}
-			moveDir = new Vector3 (0, 0, Input.GetAxis ("Vertical"));
+			if (inSta.X == true) {
+				moveDir = new Vector3 (0, 0, 1);
+			} else if (inSta.B) {
+				moveDir = new Vector3 (0, 0, -1);
+			} else if (inSta.X == false && inSta.B == false) {
+				moveDir = new Vector3 (0, 0, 0);
+			}
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= speed;
+			transform.Rotate (0, GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x * rotSpeed, 0);
+			Vector3 angles = mainCam.eulerAngles;
+			Debug.Log(mainCam.eulerAngles.x);
+			if(angles.x > 180 && angles.x < 340 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y > 0)
+			{
+				angles = new Vector3(340, angles.y, angles.z);
+			}
+			else if(angles.x <= 180 && angles.x > 20 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y <= 0)
+			{
+				angles = new Vector3(20, angles.y, angles.z);
+			}
+			else
+			{
+				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y * rotSpeed * -1, angles.y, angles.z);
+			}
+				
+			moveDir.y -= gra * Time.deltaTime;
+			
+			/*
 			transform.Rotate (0, Input.GetAxis ("Horizontal") * rotSpeed, 0);
-            //float rotateX = (transform.eulerAngles.x > 180) ? transform.eulerAngles.x - 360 : transform.eulerAngles.x;
-            //float angleX = Mathf.Clamp(rotateX + Input.GetAxis("Vertical") * rotSpeed * -1, minAngle, maxAngle);
-            //angleX = (angleX < 0) ? angleX + 360 : angleX;
-            //float eulerAngleX = Mathf.Clamp(mainCam.eulerAngles.x + Input.GetAxis("Vertical"), minAngle, maxAngle);
             Vector3 angles = mainCam.eulerAngles;
             Debug.Log(mainCam.eulerAngles.x);
             if(angles.x > 180 && angles.x < 340 && Input.GetAxis("Vertical") > 0)
@@ -60,7 +79,6 @@ public class PlayerMove : MonoBehaviour {
             {
                 mainCam.eulerAngles = new Vector3(angles.x + Input.GetAxis("Vertical") * rotSpeed * -1, angles.y, angles.z);
             }
-            //transform.RotateAround(transform.position, transform.right, Input.GetAxis("Horizontal") * rotSpeed);
 
 			if (Input.GetButton ("Jump")) {
 				
@@ -68,9 +86,10 @@ public class PlayerMove : MonoBehaviour {
 			} else {
 				moveDir.y -= gra * Time.deltaTime;
 			}
-			//Debug.Log ("true");
+*/
+			Debug.Log ("true");
 		} else {
-			//Debug.Log ("false");
+			Debug.Log ("false");
 		}
 
         
@@ -79,11 +98,13 @@ public class PlayerMove : MonoBehaviour {
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);
 	}
-		if(inSta.X == true){
+		/*if(inSta.X == true){
 			Debug.Log ("X");
 		}else{
 			Debug.Log("IsNotX");
-		}
+		}*/
 
+		/*moveDir.y -= gra * Time.deltaTime;
+		chCon.Move (moveDir*Time.deltaTime);*/
 }
-}
+
