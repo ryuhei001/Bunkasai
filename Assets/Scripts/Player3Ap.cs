@@ -8,11 +8,7 @@ public class Player3Ap : MonoBehaviour {
     Slider HP_Slider3;
 	public int armerPoint3 = 100;
 	public int damage3 = 10;
-    [SerializeField] GameObject OtherCamera1;
-    [SerializeField] GameObject OtherCamera2;
     [SerializeField] GameObject OtherCamera3;
-    [SerializeField] GameObject OtherCamera4;
-    
 
 
 	// Use this for initialization
@@ -24,7 +20,10 @@ public class Player3Ap : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+        if (RankingSystemScript.Ranking == 1)
+        {
+            OtherCamera3.SetActive(true); 
+        }
 	}
 	private void OnCollisionEnter(Collision collider){
 		if(collider.gameObject.tag=="Player2Shot"||collider.gameObject.tag=="Player4Shot"
@@ -34,7 +33,8 @@ public class Player3Ap : MonoBehaviour {
           
 		}
 		if(armerPoint3<0){
-			Destroy(gameObject);
+            OtherCamera3.SetActive(true);
+			Destroy(player3);
 		}
 	}
 }

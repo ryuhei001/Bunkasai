@@ -4,11 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Player2Ap : MonoBehaviour {
-    
-    [SerializeField] GameObject OtherCamera1;
+
     [SerializeField] GameObject OtherCamera2;
-    [SerializeField] GameObject OtherCamera3;
-    [SerializeField] GameObject OtherCamera;
+
     GameObject player2;
     Slider HP_Slider2;
 	public int armerPoint2 = 100;
@@ -25,7 +23,10 @@ public class Player2Ap : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        if (RankingSystemScript.Ranking == 1)
+        {
+            OtherCamera2.SetActive(true); 
+        }
 	}
 	private void OnCollisionEnter(Collision collider){
 		if(collider.gameObject.tag=="Player1Shot"||collider.gameObject.tag=="Player3Shot"
@@ -35,11 +36,8 @@ public class Player2Ap : MonoBehaviour {
 		}
 
 		if(armerPoint2<0){
+
             OtherCamera2.SetActive(true);
-            Ranking02 = GetComponent<RankingScript>().Ranking;
-            GetComponent<RankingScript>().ReturnAccess();
-            
-            GetComponent<RankingScript>().Ranking -= 1;
             Destroy(player2);          
 		}
 	}

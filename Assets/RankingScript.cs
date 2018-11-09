@@ -16,7 +16,8 @@ public class RankingScript : MonoBehaviour {
 		
 	}
 
+
     public void ReturnAccess(){
-        
+        //Ranking -= 1;
     }
 }
