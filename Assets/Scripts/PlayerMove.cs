@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GamepadInput;
 public class PlayerMove : MonoBehaviour {
+    PlayerReady playerReady;
 	public float speed = 15f;
 	public float jumpSpeed = 8f;
 	public float gra = 20f;
@@ -42,7 +43,8 @@ public class PlayerMove : MonoBehaviour {
 			}
 		}
 
-		if (chCon.isGrounded||isGround) {
+        if (chCon.isGrounded||isGround && playerReady.isGameStarted == true) {
+            playerReady.GameStart();
             if (isMashF == false && isBoostF == false)
             {
 			
@@ -102,8 +104,13 @@ public class PlayerMove : MonoBehaviour {
 			}
 			//Debug.Log ("true");
 		} else {
-			//Debug.Log ("false2");
-		}
+            //Debug.Log ("false2");
+            if(GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.One)) {
+                playerReady.GameReady();
+                GameSystem.ready += 1;
+            }
+
+        }
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);
 	}
