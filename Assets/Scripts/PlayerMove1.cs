@@ -47,7 +47,6 @@ public class PlayerMove1 : MonoBehaviour {
 			moveDir *= speed;
 			transform.Rotate (0, GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x * rotSpeed, 0);
 			Vector3 angles = mainCam.eulerAngles;
-			Debug.Log(mainCam.eulerAngles.x);
 			if(angles.x > 180 && angles.x < 340 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y > 0)
 			{
 				angles = new Vector3(340, angles.y, angles.z);

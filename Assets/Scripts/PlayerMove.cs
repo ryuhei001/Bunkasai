@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PlayerMove2 : MonoBehaviour {
+using GamepadInput;
+public class PlayerMove : MonoBehaviour {
 	public float speed = 15f;
 	public float jumpSpeed = 8f;
 	public float gra = 20f;
@@ -14,29 +14,25 @@ public class PlayerMove2 : MonoBehaviour {
 	public Transform rayPos;
 	public float rayRan = 0.85f;
 	public bool isGround;
-<<<<<<< HEAD
-	void Start () {
-		anim = GetComponent<Animator> ();
-
-
-=======
     private Transform mainCam;
     //for boost
     public float boostSpeed = 1.0f;
-    Rigidbody rigidBody;
+   // Rigidbody rigidBody;
     public float touchDelay = 0.5f;
     public bool isBoostF = false;
-    public bool isMashF;
+    public bool isMashF = false;
+	private float boostSec = BOOST_SEC;
+	public static float BOOST_SEC = 1.0f;
 	void Start () {
         mainCam = transform.Find("Main Camera1");
-        rigidBody = GetComponent<Rigidbody>();
->>>>>>> boost
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		CharacterController chCon = GetComponent<CharacterController> ();
-
+		GamepadState inSta = GamepadInput.GamePad.GetState(GamePad.Index.One);
+		Rigidbody rigidBody = GetComponent<Rigidbody>();
 		//Debug.Log ("worldPosition"+transform.TransformDirection(moveDir));
 		if (!chCon.isGrounded) {
 			if (Physics.Linecast (rayPos.position, (rayPos.position - transform.up * rayRan))) {
@@ -47,49 +43,62 @@ public class PlayerMove2 : MonoBehaviour {
 		}
 
 		if (chCon.isGrounded||isGround) {
-<<<<<<< HEAD
-			moveDir = new Vector3 (0, 0, Input.GetAxis ("Vertical2"));
-=======
-            if (isMashF == false)
+            if (isMashF == false && isBoostF == false)
             {
-                if(GamePad.GetButtonUp(GamePad.Button.B, GamePad.Index.One) {
+			
+                if(GamePad.GetButtonUp(GamePad.Button.B, GamePad.Index.One)){
                     isMashF = true;
                 }
             }else {
-                if(isBoostF == false) {
-                    if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.One) {
-                        if (touchDelay >= 0)
-                        {
-                            isBoostF = true;
-                            rigidBody.AddForce(transform.forward * boostSpeed, ForceMode.Acceleration);
-                        }
+				if(touchDelay >= 0) {
+					if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.One) ){
+                        //rigidBody.AddForce(Vector3.forward * boostSpeed, ForceMode.VelocityChange);
+						//rigidBody.velocity += (Vector3.forward * boostSpeed) * Time.fixedDeltaTime;
+						//rigidBody.velocity += transform.forward * boostSpeed;
+						//chCon.Move(transform.forward * boostSpeed);
+						isBoostF = true;
+						//chCon.velocity += transform.forward * boostSpeed;
+						Debug.Log("boost");
+						isMashF = false;
+						touchDelay = 0.5f;
                     }
-                }else {
-                    if(GamePad.GetButtonUp(GamePad.Button.B, GamePad.Index.One) {
-                        isMashF = false;
-                        isBoostF = false;
-                    }
-                }
-                
+				} else {
+					isMashF = false;
+					touchDelay = 0.5f;
+				}
                 touchDelay -= Time.deltaTime;
             }
-			if (inSta.X == true) {
+			if(isBoostF) {
+				if(boostSec >= 0) {
+					chCon.Move(transform.forward * boostSpeed * boostSec * Time.deltaTime);
+					boostSec -= Time.deltaTime;
+				}else {
+					boostSec = BOOST_SEC;
+					isBoostF = false;
+				}
+			}
+			if (inSta.B == true) {
 				moveDir = new Vector3 (0, 0, 1);
-			} else if (inSta.B) {
+			} else if (inSta.X) {
 				moveDir = new Vector3 (0, 0, -1);
 			} else if (inSta.X == false && inSta.B == false) {
 				moveDir = new Vector3 (0, 0, 0);
 			}
->>>>>>> boost
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= speed;
-			transform.Rotate (0, Input.GetAxis ("Horizontal2") * rotSpeed, 0);
-
-			if (Input.GetButton ("Jump")) {
-				
-				moveDir.y = jumpSpeed;
-			} else {
-				moveDir.y -= gra * Time.deltaTime;
+			transform.Rotate (0, GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x * rotSpeed, 0);
+			Vector3 angles = mainCam.eulerAngles;
+			if(angles.x > 180 && angles.x < 340 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y > 0)
+			{
+				angles = new Vector3(340, angles.y, angles.z);
+			}
+			else if(angles.x <= 180 && angles.x > 20 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y <= 0)
+			{
+				angles = new Vector3(20, angles.y, angles.z);
+			}
+			else
+			{
+				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y * rotSpeed * -1, angles.y, angles.z);
 			}
 			//Debug.Log ("true");
 		} else {
@@ -98,8 +107,6 @@ public class PlayerMove2 : MonoBehaviour {
 		moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);
 	}
-<<<<<<< HEAD
-=======
 		/*if(inSta.X == true){
 			Debug.Log ("X");
 		}else{
@@ -108,8 +115,5 @@ public class PlayerMove2 : MonoBehaviour {
 
 		/*moveDir.y -= gra * Time.deltaTime;
 		chCon.Move (moveDir*Time.deltaTime);*/
-    void BoostF() {
 
-    }
->>>>>>> boost
 }

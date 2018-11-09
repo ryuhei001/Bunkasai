@@ -119,7 +119,7 @@
      <Compile Include="Assets\Scripts\PlayerMotion2.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\PlayerMove1.cs" />
-     <Compile Include="Assets\Scripts\PlayerMove4.cs" />
+     <Compile Include="Assets\Scripts\PlayerMoveFinal.cs" />
      <Compile Include="Assets\Scripts\Ranking.cs" />
      <Compile Include="Assets\Scripts\titleTransition.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />

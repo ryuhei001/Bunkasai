@@ -7,6 +7,7 @@ public class imageFlashing : MonoBehaviour {
     public Image image;
     public float flashSpeed = 10f;
     private float time;
+    public Image titleImage;
     // Use this for initialization
 	void Start () {
 		
@@ -16,6 +17,7 @@ public class imageFlashing : MonoBehaviour {
 	void Update () {
         image.color = colorChange(image.color);
 	}
+    
     private Color colorChange(Color color){
         time += Time.deltaTime * 5.0F * flashSpeed;
         color.a = Mathf.Sin(time) * 0.5f + 0.5f;
