@@ -8,9 +8,11 @@ public class Player2Ap : MonoBehaviour {
     Slider HP_Slider2;
 	public int armerPoint2 = 100;
 	public int damage2 = 10;
-	// Use this for initialization
+    private AudioSource[] audioSources;
+    // Use this for initialization
 
-	void Start () {
+    void Start () {
+        audioSources = gameObject.GetComponents<AudioSource>();
         player2 = GameObject.FindWithTag("bunkasai_player(1)");
         HP_Slider2 = GameObject.FindWithTag("HitPoint2").GetComponent<Slider>();
         armerPoint2 = 100;
@@ -28,6 +30,7 @@ public class Player2Ap : MonoBehaviour {
 		}
 
 		if(armerPoint2<0){
+            audioSources[1].Play();
             HP_Slider2.value = 0;
             Destroy(player2);          
 		}
