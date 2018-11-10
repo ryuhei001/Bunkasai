@@ -22,10 +22,13 @@ public class PlayerMove4: MonoBehaviour {
     public bool isBoostF = false;
     public bool isMashF = false;
 	private float boostSec = BOOST_SEC;
+	private float boostDelay;
+	public float BOOST_DELAY = 7.0f;
 	public static float BOOST_SEC = 1.0f;
+	public float rotVerSpeed=1.5f;
 	void Start () {
         mainCam = transform.Find("Main Camera4");
-        
+        boostDelay = BOOST_DELAY;
 	}
 	
 	// Update is called once per frame
@@ -42,7 +45,7 @@ public class PlayerMove4: MonoBehaviour {
 			}
 		}
 
-		if (chCon.isGrounded||isGround) {
+		if (chCon.isGrounded||isGround||isGround==false||chCon.isGrounded==false) {
             if (isMashF == false && isBoostF == false)
             {
 			
@@ -51,7 +54,7 @@ public class PlayerMove4: MonoBehaviour {
                 }
             }else {
 				if(touchDelay >= 0) {
-					if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.Four) ){
+					if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.Four) && boostDelay <= 0){
                         //rigidBody.AddForce(Vector3.forward * boostSpeed, ForceMode.VelocityChange);
 						//rigidBody.velocity += (Vector3.forward * boostSpeed) * Time.fixedDeltaTime;
 						//rigidBody.velocity += transform.forward * boostSpeed;
@@ -76,6 +79,8 @@ public class PlayerMove4: MonoBehaviour {
 					boostSec = BOOST_SEC;
 					isBoostF = false;
 				}
+			}else {
+				boostDelay -= Time.deltaTime;
 			}
 			if (inSta.B == true) {
 				moveDir = new Vector3 (0, 0, 1);
@@ -98,7 +103,7 @@ public class PlayerMove4: MonoBehaviour {
 			}
 			else
 			{
-				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Four).y * rotSpeed * -1, angles.y, angles.z);
+				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Four).y * rotVerSpeed * -1, angles.y, angles.z);
 			}
 			//Debug.Log ("true");
 		} else {

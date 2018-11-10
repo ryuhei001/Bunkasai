@@ -19,13 +19,16 @@ public class PlayerMove2 : MonoBehaviour {
     public float boostSpeed = 1.0f;
    // Rigidbody rigidBody;
     public float touchDelay = 0.5f;
+	private float boostDelay;
+	public float BOOST_DELAY = 7.0f;
     public bool isBoostF = false;
     public bool isMashF = false;
 	private float boostSec = BOOST_SEC;
 	public static float BOOST_SEC = 1.0f;
+	public float rotVerSpeed=1.5f;
 	void Start () {
         mainCam = transform.Find("Main Camera2");
-        
+        boostDelay = BOOST_DELAY;
 	}
 	
 	// Update is called once per frame
@@ -42,7 +45,7 @@ public class PlayerMove2 : MonoBehaviour {
 			}
 		}
 
-		if (chCon.isGrounded||isGround) {
+		if (chCon.isGrounded||isGround||isGround==false||chCon.isGrounded==false) {
             if (isMashF == false && isBoostF == false)
             {
 			
@@ -51,7 +54,7 @@ public class PlayerMove2 : MonoBehaviour {
                 }
             }else {
 				if(touchDelay >= 0) {
-					if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.Two) ){
+					if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.Two) && boostDelay <= 0 ){
                         //rigidBody.AddForce(Vector3.forward * boostSpeed, ForceMode.VelocityChange);
 						//rigidBody.velocity += (Vector3.forward * boostSpeed) * Time.fixedDeltaTime;
 						//rigidBody.velocity += transform.forward * boostSpeed;
@@ -59,6 +62,7 @@ public class PlayerMove2 : MonoBehaviour {
 						isBoostF = true;
 						//chCon.velocity += transform.forward * boostSpeed;
 						Debug.Log("boost");
+						boostDelay = BOOST_DELAY;
 						isMashF = false;
 						touchDelay = 0.5f;
                     }
@@ -76,6 +80,8 @@ public class PlayerMove2 : MonoBehaviour {
 					boostSec = BOOST_SEC;
 					isBoostF = false;
 				}
+			}else {
+				boostDelay = BOOST_DELAY;
 			}
 			if (inSta.B == true) {
 				moveDir = new Vector3 (0, 0, 1);
@@ -98,7 +104,7 @@ public class PlayerMove2 : MonoBehaviour {
 			}
 			else
 			{
-				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Two).y * rotSpeed * -1, angles.y, angles.z);
+				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Two).y * rotVerSpeed * -1, angles.y, angles.z);
 			}
 			//Debug.Log ("true");
 		} else {

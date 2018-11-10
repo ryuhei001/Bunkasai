@@ -1067,7 +1067,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 211367692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.63, z: 4.63}
+  m_LocalPosition: {x: 0, y: 10.5, z: 4.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 751250616}
@@ -1241,9 +1241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9da3612cd884977818241b030768d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 65
   jumpSpeed: 8
-  gra: 20
+  gra: 1300
   rotSpeed: 3
   rayPos: {fileID: 283965209}
   rayRan: 0.85
@@ -1252,6 +1252,7 @@ MonoBehaviour:
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
+  rotVerSpeed: 1.5
 --- !u!143 &283965207
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1262,13 +1263,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 10
-  m_Radius: 5
+  m_Height: 12.31
+  m_Radius: 3.63
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 4.93, z: 0}
+  m_Center: {x: 0, y: 5.48, z: 0}
 --- !u!95 &283965208
 Animator:
   serializedVersion: 3
@@ -1570,9 +1571,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5f0393c56cc410aa19f09e9ee51f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 65
   jumpSpeed: 8
-  gra: 20
+  gra: 1300
   rotSpeed: 3
   rayPos: {fileID: 301215451}
   rayRan: 0.85
@@ -1581,6 +1582,7 @@ MonoBehaviour:
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
+  rotVerSpeed: 1.5
 --- !u!143 &301215449
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1591,13 +1593,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 10
-  m_Radius: 5
+  m_Height: 12.31
+  m_Radius: 3.63
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 4.93, z: 0}
+  m_Center: {x: 0, y: 5.48, z: 0}
 --- !u!95 &301215450
 Animator:
   serializedVersion: 3
@@ -4666,13 +4668,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 10
-  m_Radius: 5
+  m_Height: 12.31
+  m_Radius: 3.63
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 4.93, z: 0}
+  m_Center: {x: 0, y: 5.48, z: 0}
 --- !u!114 &751250614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4684,9 +4686,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29ed31c09567e44692c26c9d2a775d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 65
   jumpSpeed: 8
-  gra: 20
+  gra: 1300
   rotSpeed: 3
   rayPos: {fileID: 751250616}
   rayRan: 0.85
@@ -53476,7 +53478,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1418730895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.12, y: 8.35, z: 4.68}
+  m_LocalPosition: {x: 0, y: 10.5, z: 4.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 283965209}
@@ -54470,9 +54472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecc3c4aebf6204eedbbd0a4304f24ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 65
   jumpSpeed: 8
-  gra: 20
+  gra: 1300
   rotSpeed: 3
   rayPos: {fileID: 1594980256}
   rayRan: 0.85
@@ -54481,6 +54483,7 @@ MonoBehaviour:
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
+  rotVerSpeed: 1.5
 --- !u!143 &1594980254
 CharacterController:
   m_ObjectHideFlags: 0
@@ -54491,13 +54494,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 10
-  m_Radius: 5
+  m_Height: 12.31
+  m_Radius: 3.63
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 4.93, z: 0}
+  m_Center: {x: 0, y: 5.48, z: 0}
 --- !u!95 &1594980255
 Animator:
   serializedVersion: 3
@@ -54950,7 +54953,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20210
+  m_Name: pb_Mesh298714
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -55739,7 +55742,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1806485865}
   m_LocalRotation: {x: -0.042649508, y: -0, z: -0, w: 0.99909014}
-  m_LocalPosition: {x: 0, y: 8.63, z: 4.43}
+  m_LocalPosition: {x: 0, y: 10.5, z: 4.43}
   m_LocalScale: {x: 1.1768919, y: 1.0399075, z: 0.67497706}
   m_Children: []
   m_Father: {fileID: 301215451}
@@ -65027,7 +65030,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064202124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.13, z: 4.38}
+  m_LocalPosition: {x: 0, y: 10.5, z: 4.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1594980256}

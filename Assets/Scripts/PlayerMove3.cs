@@ -21,11 +21,14 @@ public class PlayerMove3 : MonoBehaviour {
     public float touchDelay = 0.5f;
     public bool isBoostF = false;
     public bool isMashF = false;
+	private float boostDelay;
+	public float BOOST_DELAY = 7.0f;
 	private float boostSec = BOOST_SEC;
 	public static float BOOST_SEC = 1.0f;
+	public float rotVerSpeed=1.5f;
 	void Start () {
         mainCam = transform.Find("Main Camera3");
-        
+        boostDelay = BOOST_DELAY;
 	}
 	
 	// Update is called once per frame
@@ -42,7 +45,7 @@ public class PlayerMove3 : MonoBehaviour {
 			}
 		}
 
-		if (chCon.isGrounded||isGround) {
+		if (chCon.isGrounded||isGround||isGround==false||chCon.isGrounded==false) {
             if (isMashF == false && isBoostF == false)
             {
 			
@@ -51,7 +54,7 @@ public class PlayerMove3 : MonoBehaviour {
                 }
             }else {
 				if(touchDelay >= 0) {
-					if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.Three) ){
+					if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.Three) && boostDelay <= 0){
                         //rigidBody.AddForce(Vector3.forward * boostSpeed, ForceMode.VelocityChange);
 						//rigidBody.velocity += (Vector3.forward * boostSpeed) * Time.fixedDeltaTime;
 						//rigidBody.velocity += transform.forward * boostSpeed;
@@ -61,6 +64,7 @@ public class PlayerMove3 : MonoBehaviour {
 						Debug.Log("boost");
 						isMashF = false;
 						touchDelay = 0.5f;
+						boostDelay = BOOST_DELAY;
                     }
 				} else {
 					isMashF = false;
@@ -76,6 +80,8 @@ public class PlayerMove3 : MonoBehaviour {
 					boostSec = BOOST_SEC;
 					isBoostF = false;
 				}
+			}else {
+				boostDelay -= Time.deltaTime;
 			}
 			if (inSta.B == true) {
 				moveDir = new Vector3 (0, 0, 1);
@@ -98,7 +104,7 @@ public class PlayerMove3 : MonoBehaviour {
 			}
 			else
 			{
-				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Three).y * rotSpeed * -1, angles.y, angles.z);
+				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.Three).y * rotVerSpeed * -1, angles.y, angles.z);
 			}
 			//Debug.Log ("true");
 		} else {
