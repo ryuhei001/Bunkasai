@@ -29,7 +29,7 @@ public class PlayerMotion : MonoBehaviour {
         } else {
             ani.SetInteger("Vertical", 0);
         }
-        if (GamePad.GetButtonUp(GamePad.Button.A, GamePad.Index.One))
+        if (GamePad.GetButtonDown(GamePad.Button.A, GamePad.Index.One))
         {
             GameObject newBomb = Instantiate(bomb,gun.transform.position, Camera.transform.rotation);
             newBomb.GetComponent<BombScript1>().SetVelocity(transform.forward);

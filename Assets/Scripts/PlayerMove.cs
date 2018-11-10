@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour {
     public bool isMashF = false;
 	private float boostSec = BOOST_SEC;
 	public static float BOOST_SEC = 1.0f;
+	public float rotVerSpeed=1.5f;
 	void Start () {
         mainCam = transform.Find("Main Camera1");
         

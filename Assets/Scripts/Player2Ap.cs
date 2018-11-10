@@ -12,7 +12,7 @@ public class Player2Ap : MonoBehaviour {
 	public int armerPoint2 = 100;
 	public int damage2 = 10;
     private AudioSource[] audioSources;
-
+    float time = 5;
 	// Use this for initialization
 
     void Start () {
