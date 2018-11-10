@@ -26,6 +26,13 @@ public class PlayerMove : MonoBehaviour {
 	private float boostSec = BOOST_SEC;
 	public static float BOOST_SEC = 1.0f;
 	public float rotVerSpeed=1.5f;
+	//回る角度 = GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).〇 * rotSpeed * (ROT_ACC * rotCountTime)
+	public float ROT_MAX_ACC_X = 3;  //回転の最高加速度
+	public float rotCountTimeX = 0;	//押し続けられている時間
+	public float ROT_ACC_X = 10f;  //加速度
+	public float rotCountTimeY = 0;
+	public float ROT_MAX_ACC_Y = 3;
+	public float ROT_ACC_Y = 10f;
 	void Start () {
         mainCam = transform.Find("Main Camera1");
         boostDelay = BOOST_DELAY;
@@ -105,7 +112,29 @@ public class PlayerMove : MonoBehaviour {
 
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= speed;
-			transform.Rotate (0, GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x * rotSpeed, 0);
+			//視点移動がされていないときはCountをリセット
+			float acc = 0;
+			if(!GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x){
+				rotCountTimeX = 0;
+			}else{
+				rotCountTimeX += Time.deltaTime;
+			}
+			acc = ROT_ACC_X * rotCountTimeX;
+			if(acc > ROT_MAX_ACC_X){
+				acc = ROT_MAX_ACC_X;
+			}
+			transform.Rotate (0, GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x * rotSpeed * acc, 0);
+
+			acc = 0;
+			if(!GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y){
+				rotCountTimeY = 0;
+			}else{
+				rotCountTimeY += Time.deltaTime;
+			}
+			acc = ROT_ACC_Y * rotCountTimeY;
+			if(acc > ROT_MAX_ACC_Y){
+				acc = ROT_MAX_ACC_Y;
+			}
 			Vector3 angles = mainCam.eulerAngles;
 			if(angles.x > 180 && angles.x < 340 && GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y > 0)
 			{
@@ -117,7 +146,7 @@ public class PlayerMove : MonoBehaviour {
 			}
 			else
 			{
-				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y * rotVerSpeed * -1, angles.y, angles.z);
+				mainCam.eulerAngles = new Vector3(angles.x + GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y * rotVerSpeed * acc * -1, angles.y, angles.z);
 			}
 
 			//Debug.Log ("true");
