@@ -1252,6 +1252,7 @@ MonoBehaviour:
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
+  BOOST_DELAY: 7
   rotVerSpeed: 1.5
 --- !u!143 &283965207
 CharacterController:
@@ -1580,6 +1581,7 @@ MonoBehaviour:
   isGround: 0
   boostSpeed: 100
   touchDelay: 0.5
+  BOOST_DELAY: 7
   isBoostF: 0
   isMashF: 0
   rotVerSpeed: 1.5
@@ -4696,8 +4698,15 @@ MonoBehaviour:
   boostSpeed: 100
   touchDelay: 0.5
   isBoostF: 0
+  BOOST_DELAY: 7
   isMashF: 0
   rotVerSpeed: 1.5
+  ROT_MAX_ACC_X: 3
+  rotCountTimeX: 0
+  ROT_ACC_X: 10
+  rotCountTimeY: 0
+  ROT_MAX_ACC_Y: 3
+  ROT_ACC_Y: 10
 --- !u!95 &751250615
 Animator:
   serializedVersion: 3
@@ -54483,6 +54492,7 @@ MonoBehaviour:
   touchDelay: 0.5
   isBoostF: 0
   isMashF: 0
+  BOOST_DELAY: 7
   rotVerSpeed: 1.5
 --- !u!143 &1594980254
 CharacterController:

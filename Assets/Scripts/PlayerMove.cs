@@ -114,7 +114,7 @@ public class PlayerMove : MonoBehaviour {
 			moveDir *= speed;
 			//視点移動がされていないときはCountをリセット
 			float acc = 0;
-			if(!GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x){
+			if(GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x == 0){
 				rotCountTimeX = 0;
 			}else{
 				rotCountTimeX += Time.deltaTime;
@@ -126,7 +126,7 @@ public class PlayerMove : MonoBehaviour {
 			transform.Rotate (0, GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).x * rotSpeed * acc, 0);
 
 			acc = 0;
-			if(!GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y){
+			if(GamePad.GetAxis(GamePad.Axis.LeftStick,GamePad.Index.One).y == 0){
 				rotCountTimeY = 0;
 			}else{
 				rotCountTimeY += Time.deltaTime;
